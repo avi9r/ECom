@@ -53,10 +53,10 @@ class Customer(models.Model):
     mobile = models.IntegerField()
     password= models.CharField( max_length=50)
     city = models.CharField( max_length=100)
-    pin = models.IntegerField()
+    pin = models.IntegerField(default=0)
     addesss =models.CharField( max_length=200)
     shiping_city = models.CharField( max_length=100)
-    shiping_pin = models.IntegerField()
+    shiping_pin = models.IntegerField(default=0)
     shiping_addesss =models.CharField( max_length=200)
 
     def __str__(self):

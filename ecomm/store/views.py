@@ -24,7 +24,7 @@ def register(request):
         data.mobile = request.POST['mobile']
         data.password = request.POST['password']  
         data.save()
-        messages.success(request,"New contact Registered Sucessfully")
+        messages.success(request,"You Are Registered Sucessfully.")
 
         return redirect('login')      
     else:   
